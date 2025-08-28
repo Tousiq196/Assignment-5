@@ -163,3 +163,51 @@ How to get current local time in js
 ---
 
 # Let's Code and Achieve your Dream 🎯
+
+
+
+1. 1. document.getElementById("idName")
+
+Selects only one element by its id.
+
+Since id must be unique in HTML, this always returns a single element (or null if not found).
+ 2. document.getElementsByClassName("className")
+
+Selects all elements with the given class.
+
+Returns a live HTMLCollection (not an array, but array-like).
+
+3. document.querySelector("cssSelector")
+
+Selects the first element that matches a CSS selector.
+
+
+2. Create the element → document.createElement("tagName")
+
+Add content/attributes → innerText, innerHTML, setAttribute, classList.add, etc.
+
+Insert it into the DOM using methods like:
+
+appendChild()
+
+append()
+
+prepend()
+
+insertBefore()
+
+after() / before()
+
+
+3. Event bubbling means that when an event happens on an element, it first runs the handlers on that element, and then it bubbles up (propagates) to its parent, then to the parent’s parent, and so on… all the way up to the <html> and document.
+
+4. vent Delegation is a JavaScript technique where instead of attaching an event listener to multiple child elements, i attach a single event listener to their parent.
+
+Because of event bubbling, when a child element is clicked, the event bubbles up to the parent — and i can detect which child triggered it using event.target.
+
+5. event.preventDefault()
+Purpose: Stops the default browser action for that event.
+
+It does not stop the event from bubbling.
+
+Example: Preventing a form submission or a link from navigating.
